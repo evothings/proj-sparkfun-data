@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="index.css" rel="stylesheet">
+	<title>sparkfun demo</title>
+	<script>
+	if (window.hyper) {
+		console.log = hyper.log;
+		console.error = hyper.log;
+	}
+
+	window.onerror = function(msg, url, line)
+	{
+		console.log(msg + ": " + url + ":" + line);
+	};
+	console.log("Hello World!");
+	</script>
+</head>
+<body>
+
+	<div id="data-container">
+		<!--<canvas id="myCanvas" width="300" height="150"/>-->
+	</div>
+
+	<script src="cordova.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
